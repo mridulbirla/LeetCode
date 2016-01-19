@@ -1,3 +1,5 @@
+# The following code finds of the combinations of a given word and prints them
+
 import copy
 def print_matrix(matrix,s):
 
@@ -25,10 +27,8 @@ def all_combination(matrix,k,n,s):
 def buildSubsequences(s):
     ln=len(s)
     sub_string=list(s)
-    matrix=[]
-    all_val=[]
-    for i in range(0,len(sub_string)):
-        matrix.append(0)
+    matrix=[0]*ln
+    all_val=[]  
     all_combination(matrix,0,ln-1,s)
 
 res = buildSubsequences("abc");
