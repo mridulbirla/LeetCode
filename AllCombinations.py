@@ -11,7 +11,7 @@ def print_matrix(matrix,s):
     print final_str
 
 def all_combination(matrix,k,n,s):
-    mat=copy.copy(matrix)
+    mat=list(matrix)
     if k==n:
         mat[n]==0
         print_matrix(mat,s)
